@@ -11,12 +11,12 @@ public class Booking{
                 String line = read.nextLine();
                 String[] parts = line.split(",");
                 int avaiable = Integer.parseInt(parts[1]);
-                
+            
 
                 if (avaiable == 0) {
                     System.out.println("Parking is avaible at slot "+parts[0]);
                 } else {
-                    System.out.println("Parking is not avaible at any nslot");
+                    System.out.println("Parking is not avaible at "+ parts[0] + "slot");
 
                 }
             }
